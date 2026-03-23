@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senadi Yuhansa | Computer Science Portfolio</title>
+    <meta name="description" content="Portfolio of Senadi Yuhansa – Computer Science undergraduate exploring cybersecurity and web development. Projects, skills, and certifications showcased.">
+    <meta name="keywords" content="Senadi Yuhansa, Portfolio, Computer Science, Cybersecurity, Web Development, Projects, Programming">
+    <meta name="author" content="Senadi Yuhansa">
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Particle canvas for space background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Senadi<span>.</span></a>
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content fade-in-section">
+            <h2 class="greeting">Hello, I'm</h2>
+            <h1 class="name">Senadi Yuhansa</h1>
+            <h3 class="title">Computer Science Undergraduate</h3>
+            <p class="subtitle">Exploring Cybersecurity & Web Development</p>
+            <p class="tagline">Building secure and meaningful digital experiences.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="Senadi_Yuhansa_CV.pdf" download="Senadi_Yuhansa_CV.pdf" class="btn secondary-btn glow-btn"><i class="fas fa-download"></i> Download CV</a>
+            </div>
+        </div>
+        
+        <div class="hero-visual fade-in-section">
+            <div class="glowing-planet">
+                <div class="ring"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title fade-in-section">About Me</h2>
+        <div class="about-container fade-in-section">
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <!-- The user will place their profile picture here -->
+                    <img src="profile.jpeg" alt="Senadi Yuhansa profile picture" class="profile-pic" onerror="this.src='https://via.placeholder.com/300x300/0a192f/00bfff?text=Senadi+Yuhansa'">
+                </div>
+            </div>
+            <div class="about-text">
+                <p>Hello! I am Senadi Yuhansa, a Computer Science undergraduate at the University of Westminster (via IIT Sri Lanka). I am deeply curious about the world of technology, actively exploring cybersecurity and web development. My goal is to build secure, efficient, and meaningful digital systems that leave a positive impact.</p>
+                <p>I enjoy working independently to solve complex problems, taking ownership of the projects I build. Beyond the screen, I am a huge animal lover and a passionate advocate for sustainability and the UN Sustainable Development Goals (SDGs).</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title fade-in-section">Projects</h2>
+        <div class="project-grid fade-in-section">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Orean360</h3>
+                    <p>AI-enhanced platform that transforms social media data into actionable insights.</p>
+                    <div class="tech-stack">
+                        <span>React.js</span><span>Node.js</span><span>Python</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/senadii" target="_blank" class="github-btn"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Life Below Water</h3>
+                    <p>SDG-based awareness website dedicated to ocean conservation and ecology.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/senadii" target="_blank" class="github-btn"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Secure Web App</h3>
+                    <p>Login system with password hashing, protected against SQL Injection and XSS.</p>
+                    <div class="tech-stack">
+                        <span>PHP</span><span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/senadii" target="_blank" class="github-btn"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>InnerBliss</h3>
+                    <p>UI/UX-focused mobile application designed for stress management and mindfulness.</p>
+                    <div class="tech-stack">
+                        <span>Figma</span><span>UI/UX</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Theatre Booking System</h3>
+                    <p>Java-based terminal and GUI application handling seat selection and booking logic.</p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/senadii" target="_blank" class="github-btn"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <h2 class="section-title fade-in-section">Education</h2>
+        <div class="timeline fade-in-section">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>BSc Computer Science</h3>
+                    <h4>University of Westminster (via IIT)</h4>
+                    <span class="date">2024 – 2028</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Foundation in Higher Studies</h3>
+                    <h4>Informatics Institute of Technology (IIT)</h4>
+                    <span class="date">Merit Pass</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>School Education</h3>
+                    <h4>Sujatha Vidyalaya, Nugegoda</h4>
+                    <span class="date">Completed</span>
+                    <p>Strong O/L results in Mathematics, ICT, and English.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title fade-in-section">Skills</h2>
+        <div class="skills-container fade-in-section">
+            <div class="skill-category">
+                <h3><i class="fas fa-terminal"></i> Programming</h3>
+                <div class="skill-tags">
+                    <span>Java</span><span>Python</span><span>PHP</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Frontend Web</h3>
+                <div class="skill-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend & APIs</h3>
+                <div class="skill-tags">
+                    <span>Node.js</span><span>REST APIs</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Databases</h3>
+                <div class="skill-tags">
+                    <span>MySQL</span><span>PostgreSQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Other & Concepts</h3>
+                <div class="skill-tags">
+                    <span>GitHub</span><span>Cybersecurity Basics</span><span>UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Volunteering -->
+    <section class="cert-vol-section">
+        <div class="cert-container fade-in-section">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Microsoft Certified</h4>
+                    <p>Azure AI Fundamentals (AI-900)</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>ICDL</h4>
+                    <p>Essential Computing Skills</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>LinkedIn Learning</h4>
+                    <p>HTML, CSS & JS, Python Projects, GitHub Copilot</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-medal"></i>
+                    <h4>Workshops</h4>
+                    <p>Vertex'25 Robotics (IEEE), CodeRally 6.0, IX 25</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-users"></i>
+                    <h4>Leadership</h4>
+                    <p>GLO Leadership Academy</p>
+                    <p>Sysco LABS Sri Lanka</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-coffee"></i>
+                    <h4>Barista Experience</h4>
+                    <p>Customer Service, Operations</p>
+                    <p>& Teamwork</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="vol-container fade-in-section" id="volunteering">
+            <h2 class="section-title">Volunteering</h2>
+            <div class="vol-card custom-vol-card">
+                <div class="vol-image-placeholder">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="vol-content">
+                    <h3>Pinnawela Elephant Orphanage</h3>
+                    <span class="location"><i class="fas fa-map-marker-alt"></i> Sri Lanka</span>
+                    <ul class="vol-list">
+                        <li><i class="fas fa-star"></i> Supported conservation efforts by assisting with daily elephant care and feeding routines.</li>
+                        <li><i class="fas fa-star"></i> Conducted behavioral observation to ensure animal comfort and wellbeing.</li>
+                        <li><i class="fas fa-star"></i> Gained valuable hands-on experience in wildlife preservation and understanding of ecological balance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title fade-in-section">Contact Me</h2>
+        <div class="contact-container fade-in-section">
+            <div class="contact-info">
+                <h3>Let's Connect!</h3>
+                <p>I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                <ul class="contact-links">
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:rbsenadi@gmail.com">rbsenadi@gmail.com</a></li>
+                    <li><i class="fab fa-github"></i> <a href="https://github.com/senadii" target="_blank">github.com/senadii</a></li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/senadi-yuhansa" target="_blank">linkedin.com/in/senadi-yuhansa</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Sri Lanka</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top-glow"></div>
+        <div class="footer-content fade-in-section">
+            <h3>Senadi Yuhansa</h3>
+            <p>Computer Science Undergraduate</p>
+            <div class="social-icons">
+                <a href="https://github.com/senadii" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/senadi-yuhansa" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:rbsenadi@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="universe-text">Exploring the universe of code, one project at a time 🌌</p>
+            <p class="copyright">&copy; 2026 Senadi Yuhansa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS script -->
+    <script src="script.js"></script>
+</body>
+</html>
